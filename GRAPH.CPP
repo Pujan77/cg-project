@@ -1,0 +1,269 @@
+#include<stdio.h>
+#include<conio.h>
+#include<graphics.h>
+#include<dos.h>
+void ghar()
+{
+	arc(450,50,90,180,15);
+		arc(435,65,90,340,15);
+		arc(442,79,180,300,15);
+		arc(464,93,180,330,15);
+		arc(490,95,210,330,15);
+		arc(503,90,270,30,15);
+		arc(503,73,330,60,15);
+		arc(495,60,360,190,15);
+		arc(480,45,0,90,15);
+		arc(465,30,0,200,15);
+		setfillstyle(1,WHITE);
+		floodfill(450,60,getmaxcolor());
+		arc(250,50,90,180,15);
+		arc(235,65,90,340,15);
+		arc(242,79,180,300,15);
+		arc(264,93,180,330,15);
+		arc(290,95,210,330,15);
+		arc(303,90,270,30,15);
+		arc(303,73,330,60,15);
+		arc(295,60,360,190,15);
+		arc(280,45,0,90,15);
+		arc(265,30,0,200,15);
+		setfillstyle(1,WHITE);
+		floodfill(250,60,getmaxcolor());
+		circle(600,100,20);
+		setfillstyle(1,YELLOW);
+		floodfill(595,100,getmaxcolor());
+		line(0,50,0,240);
+		line(0,50,100,50);
+		line(100,50,100,130);
+		line(100,130,70,130);
+		line(70,130,70,240);
+		rectangle(130,100,200,240);
+		line(130,100,110,130);
+		line(110,130,110,240);
+		line(50,50,50,5);
+		line(50,5,170,5);
+		line(50,5,30,35);
+		line(30,35,30,50);
+		line(170,5,170,100);
+		rectangle(5,55,25,75);
+		setfillstyle(2,RED);
+		floodfill(6,57,getmaxcolor());
+		rectangle(75,55,95,75);
+		setfillstyle(2,RED);
+		floodfill(76,56,getmaxcolor());
+		rectangle(35,55,65,75);
+		setfillstyle(2,RED);
+		floodfill(37,57,getmaxcolor());
+		rectangle(5,95,25,115);
+		setfillstyle(2,RED);
+		floodfill(6,99,getmaxcolor());
+		rectangle(75,95,95,115);
+		setfillstyle(2,RED);
+		floodfill(77,99,getmaxcolor());
+		rectangle(35,95,65,115);
+		setfillstyle(2,RED);
+		floodfill(37,99,getmaxcolor());
+		outtextxy(150,300,"Jump Point");
+		outtextxy(500,450,"land point");
+		line(0,240,350,240);
+		line(350,240,350,500);
+		line(370,440,600,440);
+		line(370,440,370,500);
+			line(600,440,600,200);
+			line(600,200,650,200);
+			line(600,200,570,230);
+			line(570,230,570,440);
+}
+void main()
+{
+	int gd=DETECT,gm;
+	initgraph(&gd,&gm,"C:\\turboc3\\bgi\\");
+	int i=0;
+	setbkcolor(BLACK);
+	while(i<220)
+	{
+		ghar();
+		if(i%2==0){
+			circle(95+i,160,2);
+			circle(105+i,160,2);
+			circle(100+i,165,15);
+			arc(100+i,165,240,300,10);
+			line(100+i,180,100+i,220);
+			line(100+i,220,80+i,240);
+			line(100+i,220,120+i,240);
+			line(70+i,200,130+i,200);
+			line(100+i,205,95+i,205);
+			line(95+i,205,95+i,195);
+			line(95+i,195,100+i,195);
+			line(100+i,195,105+i,195);
+			line(105+i,195,105+i,205);
+			line(105+i,205,100+i,205);
+			i++;
+			delay(30);
+			cleardevice();	}
+		else{
+			circle(95+i,160,2);
+			circle(105+i,160,2);
+			circle(100+i,165,15);
+			arc(100+i,165,240,300,10);
+			line(100+i,180,100+i,220);
+			line(100+i,220,100+i,240);
+			line(100+i,220,100+i,240);
+			line(70+i,205,100+i,200);
+			line(100+i,200,130+i,205);
+			line(100+i,205,95+i,205);
+			line(95+i,205,95+i,195);
+			line(95+i,195,100+i,195);
+			line(100+i,195,105+i,195);
+			line(105+i,195,105+i,205);
+			line(105+i,205,100+i,205);
+			i++;
+			delay(30);
+			cleardevice();	}}
+	int k=60;
+	i=1;
+	while(i<60)	{
+		ghar();
+		circle(335+i,160-k,2);
+		circle(345+i,160-k,2);
+		circle(340+i,165-k,15);
+		line(337+i,170-k,343+i,170-k);
+		line(340+i,180-k,340+i,220-k);
+		line(340+i,220-k,310+i,240-k);
+		line(340+i,220-k,370+i,240-k);
+		line(310+i,200-k,370+i,200-k);
+		line(340+i,205-k,335+i,205-k);
+		line(335+i,205-k,335+i,195-k);
+		line(335+i,195-k,340+i,195-k);
+		line(340+i,195-k,345+i,195-k);
+		line(345+i,195-k,345+i,205-k);
+		line(345+i,205-k,340+i,205-k);
+		i++;
+		k--;
+		delay(20);
+		cleardevice();	}
+		i=1;
+	 while(i<100)	 {
+		ghar();
+		circle(395,160+i,2);
+		circle(405,160+i,2);
+		circle(400,165+i,15);
+		arc(400,165+i,240,300,5);
+		line(400,180+i,400,220+i);
+		line(400,220+i,370,240+i);
+		line(400,220+i,430,240+i);
+		line(370,200+i,430,200+i);
+		line(400,205+i,395,205+i);
+		line(395,205+i,395,195+i);
+		line(395,195+i,400,195+i);
+		line(400,195+i,405,195+i);
+		line(405,195+i,405,205+i);
+		line(405,205+i,400,205+i);
+		i++;
+		delay(10);
+		cleardevice();	 }
+	 i=100;
+	 int j=1;
+	 while(j<100)	{
+		ghar();
+		circle(400+j,160+i,2);
+		circle(410+j,160+i,2);
+		circle(405+j,165+i,15);
+		circle(405+j,173+i,3);
+		line(405+j,180+i,405+j,220+i);
+		line(405+j,220+i,375+j,240+i);
+		line(405+j,220+i,435+j,240+i);
+		line(375+j,200+i,435+j,200+i);
+		line(405+j,205+i,395+j,205+i);
+		line(395+j,205+i,395+j,195+i);
+		line(395+j,195+i,405+j,195+i);
+		line(405+j,195+i,410+j,195+i);
+		line(410+j,195+i,410+j,205+i);
+		line(410+j,205+i,405+j,205+i);
+		line(395+j,195+i,375+j,65+i);
+		line(410+j,195+i,435+j,65+i);
+		arc(405+j,65+i,0,180,30);
+		line(375+j,65+i,435+j,65+i);
+		i++;
+		j++;
+		delay(60);
+		cleardevice();	 }
+		ghar();
+		circle(397+j,160+i,2);
+		circle(412+j,160+i,2);
+		circle(405+j,165+i,15);
+		arc(405+j,165+i,220,320,10);
+		line(405+j,180+i,405+j,220+i);
+		line(405+j,220+i,375+j,240+i);
+		line(405+j,220+i,435+j,240+i);
+		line(375+j,200+i,435+j,200+i);
+		line(405+j,205+i,395+j,205+i);
+		line(395+j,205+i,395+j,195+i);
+		line(395+j,195+i,405+j,195+i);
+		line(405+j,195+i,410+j,195+i);
+		line(410+j,195+i,410+j,205+i);
+		line(410+j,205+i,405+j,205+i);
+		line(395+j,195+i,375+j,65+i);
+		line(410+j,195+i,435+j,65+i);
+		arc(405+j,65+i,0,180,30);
+		line(375+j,65+i,435+j,65+i);
+		cleardevice();
+	 for(int l=0;l<8;l++) {
+		k=1;
+	 while (k<=5)	{
+			ghar();
+		circle(397+j,160+i+k,2);
+		circle(412+j,160+i+k,2);
+		circle(405+j,165+i+k,15);
+		arc(405+j,165+i+k,220,320,10);
+		line(405+j,180+i+k,405+j,220+i+k);
+		line(405+j,220+i+k,375+j,240+i+k);
+		line(405+j,220+i+k,435+j,240+i+k);
+		line(375+j,200+i+k,435+j,200+i+k);
+		line(405+j,205+i+k,395+j,205+i+k);
+		line(395+j,205+i+k,395+j,195+i+k);
+		line(395+j,195+i+k,405+j,195+i+k);
+		line(405+j,195+i+k,410+j,195+i+k);
+		line(410+j,195+i+k,410+j,205+i+k);
+		line(410+j,205+i+k,405+j,205+i+k);
+		delay(10);
+		cleardevice();
+		k++;	 }
+		k=5;
+	 while(k>=0)	{
+	      ghar();
+		circle(397+j,160+i-k,2);
+		circle(412+j,160+i-k,2);
+		circle(405+j,165+i-k,15);
+		arc(405+j,165+i-k,220,320,10);
+		line(405+j,180+i-k,405+j,220+i-k);
+		line(405+j,220+i-k,375+j,240+i-k);
+		line(405+j,220+i-k,435+j,240+i-k);
+		line(375+j,200+i-k,435+j,200+i-k);
+		line(405+j,205+i-k,395+j,205+i-k);
+		line(395+j,205+i-k,395+j,195+i-k);
+		line(395+j,195+i-k,405+j,195+i-k);
+		line(405+j,195+i-k,410+j,195+i-k);
+		line(410+j,195+i-k,410+j,205+i-k);
+		line(410+j,205+i-k,405+j,205+i-k);
+		delay(10);
+		cleardevice();
+		k--;	} }
+		 ghar();
+		circle(397+j,160+i,2);
+		circle(412+j,160+i,2);
+		circle(405+j,165+i,15);
+		arc(405+j,165+i,220,320,10);
+		line(405+j,180+i,405+j,220+i);
+		line(405+j,220+i,375+j,240+i);
+		line(405+j,220+i,435+j,240+i);
+		line(375+j,200+i,435+j,200+i);
+		line(405+j,205+i,395+j,205+i);
+		line(395+j,205+i,395+j,195+i);
+		line(395+j,195+i,405+j,195+i);
+		line(405+j,195+i,410+j,195+i);
+		line(410+j,195+i,410+j,205+i);
+		line(410+j,205+i,405+j,205+i);
+	getch();
+	closegraph();
+}
+
